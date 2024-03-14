@@ -50,11 +50,11 @@ export default {
     };
   },
   computed: {
-    offset() {
+    array() {
       return this.radius * Math.PI * 2;
     },
-    array() {
-      return this.offset * (1 - this.value);
+    offset() {
+      return this.array * (1 - this.value);
     },
     percent() {
       return `${Math.round(this.value * 100)} %`;
